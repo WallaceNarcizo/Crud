@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Exemplo de Cadastro</title>
+        <meta charset="utf-8"/>                  
+    	<link rel="stylesheet" href="estilo.css">      	
+    </head>
+    <body>
+        <h1>Exemplo de CRUD</h1>
+		<div id="loading" style="display: none;">
+		</div>
+		<div id="conteudo">
+	        <input type="button" value="novo" onclick="novo()"/>
+	        <div id="formulario" style="display: none;">
+	            <label>
+	                Nome: <input type="text" id="nome"/>
+	            </label><br/>
+	            <label>
+	                Cidade: <input type="text" id="cidade"/>
+	            </label><br/>
+	            <label>
+	                Estado: <input type="text" id="estado"/>
+	            </label><br/>
+	            <label>
+	                Mês de maior rotatividade: <input type="text" id="mes"/>
+	            </label><br/>
+	            <label>
+	                Hotel: <input type="text" id="hotel"/>
+	            </label><br/>
+	            <input type="button" value="salvar" onclick="salvar()"/>
+	            <input type="button" value="cancelar" onclick="cancelar()"/>
+	        </div>
+	        <div id="lista">
+	            <table border="1" width="100%">
+	                <thead>
+	                    <th>id</th>
+	                    <th>nome</th>
+	                    <th>cidade</th>
+	                    <th>estado</th>
+	                    <th>mês</th>
+	                    <th>hotel</th>
+	                    <th></th>
+	                </thead>
+	                <tbody id="dados">
+	
+	                </tbody>
+	            </table>
+	        </div>
+		</div>
+        <script src="crud.js"></script>
+    </body>   
+</html>
